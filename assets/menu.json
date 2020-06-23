@@ -1,0 +1,75 @@
+[{
+    "id": 1,
+    "name": "ໜ້າຫຼັກ",
+    "path": "/",
+    "level": 0,
+    "parent": 1,
+    "menuTypeId": 1,
+    "menuIcon": "mdi-home",
+    "subMenus": []
+  },
+  {
+    "menuId": 2,
+    "menuName": "ລູກຄ້າ",
+    "menuUrl": "/inspire",
+    "menuLevel": 0,
+    "parent": 2,
+    "menuTypeId": 2,
+    "menuIcon": "mdi-account-multiple",
+    "menuImg": "search_b.png",
+    "subMenus": [{
+      "menuId": 17,
+      "menuName": "ສາຂາ/ພະແນກ",
+      "menuUrl": "/employees/department",
+      "menuLevel": 1,
+      "parent": 2,
+      "menuTypeId": 2,
+      "menuIcon": "mdi-source-branch",
+      "subMenus": []
+    }]
+  },
+  {
+    "menuId": 4,
+    "menuName": "ລາຍການປ້ຳໂມງ",
+    "menuUrl": "/",
+    "menuLevel": 0,
+    "parent": 4,
+    "menuTypeId": 4,
+    "menuIcon": "mdi-calendar-clock",
+    "menuImg": "search_b.png",
+    "subMenus": [{
+        "menuId": 20,
+        "menuName": "ປ້ຳໂມງຕົນເອງ",
+        "menuUrl": "/fingerprint/me",
+        "menuLevel": 1,
+        "parent": 2,
+        "menuTypeId": 2,
+        "menuIcon": "fad fa-portrait",
+        "subMenus": []
+      },
+      {
+        "menuId": 17,
+        "menuName": "ປ້ຳໂມງລວມ",
+        "menuUrl": "/fingerprint/all",
+        "menuLevel": 1,
+        "parent": 2,
+        "menuTypeId": 2,
+        "menuIcon": "mdi-account-multiple",
+        "subMenus": []
+      }
+    ]
+  },
+  {
+    "menuId": 5,
+    "menuName": "ຂໍ້ມູນສ່ວນຕົວ",
+    "menuUrl": "/myinfo",
+    "menuLevel": 0,
+    "parent": 5,
+    "menuTypeId": 5,
+    "menuIcon": "mdi-account-clock",
+    "menuImg": "search_b.png",
+    "subMenus": []
+  }
+
+
+]

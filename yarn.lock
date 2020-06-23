@@ -1202,6 +1202,14 @@
     consola "^2.11.3"
     defu "^2.0.2"
 
+"@nuxtjs/dotenv@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/dotenv/-/dotenv-1.4.1.tgz#dd5abb98e22cc7ae27139d3aa606151034293128"
+  integrity sha512-DpdObsvRwC8d89I9mzz6pBg6e/PEXHazDM57DOI1mmML2ZjHfQ/DvkjlSzUL7T+TnW3b/a4Ks5wQx08DqFBmeQ==
+  dependencies:
+    consola "^2.10.1"
+    dotenv "^8.1.0"
+
 "@nuxtjs/proxy@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/proxy/-/proxy-2.0.0.tgz#cf19894eac721a2ad896293f241371f046db71e7"
@@ -3194,7 +3202,7 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
-dotenv@^8.2.0:
+dotenv@^8.1.0, dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -8535,6 +8543,11 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-i18n@^8.18.2:
+  version "8.18.2"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.18.2.tgz#cd7c12f2e178e6faa23b0e3cfd2f7bac9305f8fc"
+  integrity sha512-0X5nBTCZAVjlwcrPaYJwNs3iipBBTv0AUHwQUOa8yP3XbQGWKbRHqBb3OhCYtum/IHDD21d/df5Xd2VgyxbxfA==
 
 vue-loader@^15.9.2:
   version "15.9.2"

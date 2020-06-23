@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('~assets/fonts/Helvetica.otf');
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f4fbff;
+}
+
+.login-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.split {
+  position: relative;
+  height: 100%;
+
+  &.left {
+    display: none;
+    flex: 0 0 35%;
+    background-color: rgb(54, 54, 63);
+
+    @media screen and (min-width: 760px) {
+      display: block;
+    }
+  }
+
+  &.right {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+}
+
+.logo-box {
+  position: relative;
+  padding: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .desc-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 2vw;
+    color: #d9d9d9;
+  }
+}
+
+.bcel-logo {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  transition: all .2s;
+
+  .welcom {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-family: Helvetica;
+  }
+
+  @media screen and (min-width: 760px) {
+    width: 180px;
+    height: 180px;
+  }
+
+  @media screen and (min-height: 560px) {
+    width: 180px;
+    height: 180px;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 0 10px rgba(40, 11, 168, 0.5));
+  }
+}
+
+.login-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin-top: 10px;
+
+  @media screen and (min-width: 760px) {
+    width: 360px;
+  }
+
+  .control-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+    border-radius: 50px;
+    background-color: #d6d6d6;
+    transition: all .2s;
+
+    &:focus-within {
+      transform: translateY(-5px);
+      box-shadow: 0 2px 8px 1px rgba(66, 66, 66, 0.8);
+    }
+
+
+    input {
+      outline: none;
+      flex: 1 1 auto;
+      padding-right: 10px;
+    }
+
+    label {
+      position: absolute;
+      left: 20px;
+      pointer-events: none;
+      transition: all .2s;
+    }
+
+    input:valid+label {
+      transform: translateY(-30px);
+      font-size: 14px;
+      color: black;
+    }
+
+    input:invalid+label {
+      transform: translateY(0);
+      font-size: 18px;
+      color: #646464;
+    }
+  }
+}
+
+.btn-submit {
+  outline: none;
+  background-color: #0faa23;
+  width: 200px;
+  border-radius: 50px;
+  padding: 10px 0;
+  color: white;
+  transition: all .2s;
+  z-index: 2;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1px 10px 1px rgba(7, 121, 22, 0.8);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: unset;
+  }
+}
+
+.p-spacer {
+
+  &.s10 {
+    height: 10px;
+  }
+
+  &.s20 {
+    height: 20px;
+  }
+
+  &.s30 {
+    height: 30px;
+  }
+
+  &.s40 {
+    height: 40px;
+  }
+
+  &.s50 {
+    height: 50px;
+  }
+
+  &.s60 {
+    height: 60px;
+  }
+
+  &.s70 {
+    height: 70px;
+  }
+
+  &.s80 {
+    height: 80px;
+  }
+
+  &.top {
+    height: 10%;
+
+    @media screen and (min-width: 760px) {
+      height: 20%;
+    }
+  }
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 10px 0;
+  text-align: center;
+  color: #707070;
+
+  &.right {
+    display: none;
+
+    @media screen and (min-width: 760px) {
+      display: inline;
+    }
+  }
+
+  &.right {
+    display: inline;
+
+    @media screen and (min-width: 760px) {
+      display: none;
+    }
+  }
+}
+
+.bg-box {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 40vh;
+  opacity: .3;
+
+  @media screen and (min-width: 760px) {
+    display: none;
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+}
+
+.bg-desc-box {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 20px;
+  transform: translate(-50px, -180px);
+  opacity: .3;
+
+  @media screen and (min-width: 760px) {
+    display: none;
+  }
+}
